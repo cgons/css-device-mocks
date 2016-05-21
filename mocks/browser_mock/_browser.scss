@@ -1,0 +1,111 @@
+.browser-mock {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+.browser-mock .top-row {
+    border-radius: 5px 5px 0 0;
+    height: 30px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #eee;
+}
+.browser-mock .top-row table {
+    width: 100%;
+    border-collapse: collapse;
+    td { padding: 0; }
+}
+
+// Address bar
+.browser-mock .top-row .address-bar div {
+    background: #fff;
+    height: 20px;
+    top: 3px;
+    position: relative;
+    border-radius: 2px;
+    text-align: left;
+}
+.browser-mock .top-row .address-bar div::before {
+    font-size: 12px;
+    content: "www.example.com";
+    color: #ccc;
+    position: relative;
+    left: 5px;
+    bottom: 3px;
+}
+// ---
+
+// Circles
+.browser-mock .top-row .circles {
+    width: 75px;
+}
+.browser-mock .top-row .circles span {
+    display: inline-block;
+    background: #FFCC0F;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    top: 2px;
+    position: relative;
+}
+.browser-mock .top-row .circles span::before {
+    display: block;
+    background: #FC6E60;
+    position: absolute;
+    right: 20px;
+    height: 10px;
+    border-radius: 10px;
+    width: 10px;
+    content: ""
+}
+.browser-mock .top-row .circles span::after {
+    display: block;
+    background: #0FC028;
+    position: absolute;
+    left: 20px;
+    height: 10px;
+    border-radius: 10px;
+    width: 10px;
+    content: ""
+}
+// ---
+
+// Settings Icon
+.browser-mock .top-row .settings-icon {
+    width: 40px;
+}
+.browser-mock .top-row .settings-icon span,
+.browser-mock .top-row .settings-icon span::before,
+.browser-mock .top-row .settings-icon span::after {
+    background: #ccc;
+    width: 20px;
+    height: 3px;
+}
+
+.browser-mock .top-row .settings-icon span {
+    display: inline-block;
+    top: 7px;
+    right: 10px;
+    position: absolute;
+}
+.browser-mock .top-row .settings-icon span::before {
+    display: block;
+    top: 6px;
+    right: 0;
+    content: "";
+    position: relative;
+}
+.browser-mock .top-row .settings-icon span::after {
+    display: block;
+    top: 9px;
+    right: 0;
+    content: "";
+    position: relative;
+}
+// ---
+
+.browser-content {
+    min-height: 150px;
+    position: relative;
+}

@@ -1,0 +1,69 @@
+$phone_border_radius: 30px;
+$screen_height: 460;
+$screen_width: 290;
+
+.phone {
+    position: relative;
+    margin: auto;
+    border: 2px solid #CFCFD0;
+    border-radius: $phone_border_radius;
+    width: #{$screen_width * 1.10}px;
+    box-shadow: inset 0px 0px 6px 0px rgba(#CFCFD0, 1);
+    background: #fefefe;
+}
+
+.phone-top, .phone-bottom {
+    height: #{.15 * $screen_height}px;
+    text-align: center;
+
+    p { position: relative; }
+}
+.sensor, .camera, .grill {
+    background: #666;
+}
+.sensor {
+    $circle_size: 7px;
+    display: inline-block;
+    border-radius: $circle_size;
+    height: $circle_size;
+    width: $circle_size;
+    margin: 12px 0 5px;
+}
+.camera {
+    $camera_size: 12;
+    display: inline-block;
+    width: #{$camera_size}px;
+    height: #{$camera_size}px;
+    border-radius: #{$camera_size}px;
+    position: absolute;
+    top: 3px;
+    left: 100px;
+}
+.grill {
+    display: inline-block;
+    position: relative;
+    border-radius: 40px;
+    width: 60px;
+    height: 5px;
+    bottom: 4px;
+}
+
+.screen {
+    margin: auto;
+    position: relative;
+    width: #{$screen_width}px;
+    height: #{$screen_height}px;
+    border: 2px solid #e2e2e2;
+    background: #fff;
+}
+
+.circular-button {
+    $circle_size: 45px;
+    display: inline-block;
+    background: #fefefe;
+    border-radius: $circle_size;
+    height: $circle_size;
+    width: $circle_size;
+    margin-top: 10px;
+    border: 3px solid #e2e2e2;
+}

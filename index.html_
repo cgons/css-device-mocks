@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>CSS Device Mocks</title>
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="demo_assets/dist/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>CSS Device Mocks</h1>
+            <p>
+                <a href=""><i class="fa fa-github"></i> cgons/css-device-mocks</a>
+            </p>
+        </header>
+
+
+        <div class="mocks mc">
+
+            <div class="mock-item">
+                <div class="mock-title">
+                    <h2>Browser Mock</h2>
+                </div>
+                <!--=include mocks/browser_mock/_browser_mock.html -->
+                <p class="footnote">
+                    Note: The sample content is an image (<a href="">click to download</a>).
+                </p>
+            </div>
+
+            <div class="mock-item">
+                <div class="mock-title">
+                    <h2>iPhone 6 Mock</h2>
+                </div>
+                <!--=include mocks/iphone_mock/_iphone6_mock.html -->
+                <p class="footnote">
+                    Note: The sample content is an image (<a href="">click to download</a>).
+                </p>
+            </div>
+
+        </div>
+
+
+        <footer>
+            <p>
+                <a href=""><i class="fa fa-github"></i> cgons/css-device-mocks</a>
+            </p>
+        </footer>
+    </body>
+</html>

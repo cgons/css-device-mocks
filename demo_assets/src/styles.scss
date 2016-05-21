@@ -1,0 +1,99 @@
+@import '../../mocks/browser_mock/browser';
+@import '../../mocks/iphone_mock/iphone6';
+
+$blue: #007ECE;
+$darkblue: #005ECC;
+$lightblue: #17BEFD;
+$teal: #2AEEEC;
+
+*, *::before, *::after { box-sizing: border-box; }
+
+a, a:visited { color: inherit; text-decoration: none; }
+a:hover { color: #000; }
+body {
+    margin: 0; padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.mc {
+    width: 960px;
+    margin: auto;
+}
+
+header, footer {
+    text-align: center;
+    p {
+        font-size: 12px;
+    }
+}
+header {
+    padding: 100px 0;
+    background: $darkblue;
+    background: linear-gradient( to left top, $blue, $darkblue);
+    margin-bottom: 50px;
+    color: #fff;
+    h1 {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 52px;
+    }
+    a { opacity: 0.5; }
+    a:hover { opacity: 1; color: #fff; }
+}
+footer {
+    margin: 50px auto 0;
+    width: 960px;
+    border-top: 1px solid #ececec;
+    color: #999;
+}
+
+.mocks {
+    padding: 0 20px;
+    text-align: center;
+    .mock-item {
+        margin-bottom: 125px;
+    }
+    .mock-title {
+        margin: 0 auto 25px;
+        width: 500px;
+        h2 {
+            border-bottom: 1px solid #ececec;
+            padding-bottom: 5px;
+            margin: 0 0 5px;
+        }
+    }
+    .mock-item .footnote {
+        font-size: 12px;
+        color: #999;
+        margin-top: 20px;
+        a { border-bottom: 1px dotted #ccc; }
+    }
+}
+.browser-mock {
+    width: 760px;
+}
+.browser-content {
+    height: 200px;
+}
+.browser-content::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-image: url('/demo_assets/dist/media-paragraph.png');
+    background-repeat: repeat-y;
+    background-position: 50% 0;
+    z-index: -999;
+    opacity: 0.2;
+}
+
+.phone .screen:before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-image: url('/demo_assets/dist/media-paragraph.png');
+    background-repeat: repeat-y;
+    background-position: 58% -1%;
+    transform: scale(0.9);
+    z-index: 0;
+    opacity: 0.2;
+}
