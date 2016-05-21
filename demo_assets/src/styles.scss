@@ -79,7 +79,7 @@ footer {
     content: '';
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-    background-image: url('/demo_assets/dist/media-paragraph.png');
+    background-image: url('media-paragraph.png');
     background-repeat: repeat-y;
     background-position: 50% 0;
     z-index: -999;
@@ -90,7 +90,7 @@ footer {
     content: '';
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-    background-image: url('/demo_assets/dist/media-paragraph.png');
+    background-image: url('media-paragraph.png');
     background-repeat: repeat-y;
     background-position: 58% -1%;
     transform: scale(0.9);
